@@ -1,13 +1,12 @@
-# ALGen
+<a id="readme-top"></a>
 
 [![arXiv](https://img.shields.io/badge/arXiv-2305.06334-b31b1b.svg)](https://arxiv.org/abs/2305.06334)
 [![License](https://img.shields.io/badge/License-CC--BY--NC--SA%204.0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-≥3.7-blue?logo=python)](https://www.python.org/)
 [![Last Commit](https://img.shields.io/github/last-commit/IFilella/ALGen-1)](https://github.com/IFilella/ALGen-1)
 
-# ALGen-1
 
-## Introduction
+# ALGen-1
 
 ✨**ALGen**✨ is the main component of a molecular generative modeling (GM) workflow designed to generate novel chemical compounds with desired properties. ALGen encompasses the **initial stages** of the workflow illustrated in *Figure 1*, from data preprocessing through molecule generation and the implementation of the inner active learning (AL) cycles.
 
@@ -29,12 +28,13 @@ The pipeline includes the following core stages:
 <div style="text-align: center"><img src="images/figure1.png" alt="Alt Text" width=400/></div>
 
 
-
 For further technical details and results please refer to the [paper](#citation).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Table of Contents
-- [Introduction](#introduction) 🚀
+- [Introduction](#algen-1) 🚀
 - [Installation](#getting-started) 🛠️
 - [Usage](#usage) 🧪
 - [Configuration](#configuration) ⚙️
@@ -42,6 +42,8 @@ For further technical details and results please refer to the [paper](#citation)
 - [License](#license) 📜
 - [Citation](#citation) 📃
 - [Contact](#contact) 📩
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Installation
@@ -65,6 +67,9 @@ To install ALGen, follow these steps:
 >**Hardware Requirements**: ALGen is designed to run efficiently on a single GPU. A CUDA-compatible GPU with sufficient RAM is recommended for optimal performance
 
 > **Note**: Make sure you are using Python 3.10 or higher and have pip installed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Usage
 Once the environment is set up and the package is installed, you can run the generative pipeline using the following command:
@@ -93,6 +98,9 @@ For a full list of parameters, see the [Configuration](#configuration) section.
 
 More examples are provided in the [Examples](#examples) section.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Configuration
 
@@ -117,6 +125,8 @@ Below is a list of configurable parameters and their purpose:
 | `-sa`, `--sascore` | Synthetic accessibility score threshold for generated molecules. | 6 |
 | `-ta`, `--tanimoto` | Tanimoto similarity threshold for generated molecules. | 0.6 |
 | `-r`, `--restart` | Flag to restart a previously interrupted run from the last checkpoint. Use as a standalone switch (no value needed). | *False* |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Examples
@@ -192,9 +202,15 @@ python run_generation.py \
   -r
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## License
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). For full licensing terms, please refer to the [LICENSE](LICENSE) file in this repository.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## Citation
@@ -203,6 +219,8 @@ If you use this work in your research, please cite the following paper:
 > Filella-Merce, I., *et al.* (2023). *Optimizing Drug Design by Merging Generative AI With Active Learning Frameworks.* arXiv:2305.06334. [https://arxiv.org/abs/2305.06334](https://arxiv.org/abs/2305.06334)
 
 A peer-reviewed version of this work is forthcoming in *Nature Communications in Chemistry*. Please check back for the updated citation once it is available.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Contact
@@ -217,5 +235,7 @@ Affiliation: Nostrum Biodiscovery S.L.
 **Júlia Vilalta-Mor**
 Email: [julia.vilalta@bsc.es](mailto:julia.vilalta@bsc.es)
 Affiliation: Barcelona Supercomputing Center
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ##
