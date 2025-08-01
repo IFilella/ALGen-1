@@ -2,8 +2,7 @@
 
 install:
 	@echo "🔧 Creating virtual environment and installing the package..."
-	conda create -n ALGen
-	conda activate ALGen && pip install --upgrade pip && pip install -e .
+	pip install --upgrade pip && pip install -e .
 
 test:
 	@echo "🧪 Running tests..."
