@@ -3,11 +3,11 @@
 install:
 	@echo "🔧 Creating virtual environment and installing the package..."
 	conda create -n ALGen
-	. conda activate ALGen && pip install --upgrade pip && pip install -e .
+	conda activate ALGen && pip install --upgrade pip && pip install -e .
 
 test:
 	@echo "🧪 Running tests..."
-	. conda activate ALGen && pip install -r requirements.txt && pytest
+	pytest
 
 clean:
 	@echo "🧹 Cleaning up..."
@@ -16,4 +16,4 @@ clean:
 
 uninstall:
 	@echo "❌ Uninstalling package..."
-	. conda activate ALGen && pip uninstall -y ALGen
+	conda activate ALGen && pip uninstall -y ALGen

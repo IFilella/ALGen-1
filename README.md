@@ -84,7 +84,7 @@ Others:
 Once the environment is set up and the package is installed, you can run the generative pipeline using the following command:
 
 ```bash
-python run_generation.py \
+python generator.py \
   -g data/general_set.smi \
   -e 100 \
   -v 0.1 \
@@ -95,7 +95,6 @@ python run_generation.py \
   -n algen_run \
   -o results \
   -pa data/specific_set.smi \
-  -pt data/pretrained_weights.hdf5 \
   -ial 10 \
   -qed 0.6 \
   -sa 5 \
@@ -143,11 +142,11 @@ Below is a list of configurable parameters and their purpose:
 In these examples, ALGen generates 1000 molecules at each inner AL cycle from a total of 10. These are filtered according to the threshold values of 0.6, 5, and 0.6 (QED, SA, and Tanimoto, respectively).
 
 
-🔹**Molecular Generation from pretrained weights (RECOMMENDED)**
+🔹**Molecular Generation from pretrained weights**
 
 Including the `-pt`.
 ```bash
-python run_generation.py \
+python generator.py \
   -g data/general_set.smi \
   -e 100 \
   -v 0.1 \
@@ -159,7 +158,7 @@ python run_generation.py \
   -o results \
   -pa data/specific_set.smi \
   -pt data/pretrained_weights.hdf5 \
-  -ial 10 \
+  -ial 5 \
   -qed 0.6 \
   -sa 5 \
   -ta 0.6
@@ -172,18 +171,18 @@ Although having the pretrained weights from the training of the general training
 Without the `-pt`.
 
 ```bash
-python run_generation.py \
+python generator.py \
   -g data/general_set.smi \
   -e 100 \
   -v 0.1 \
   -t 0.1 \
-  -b 100 \
+  -b 16 \
   -s 1.2 \
   -q 1000 \
   -n algen_run \
   -o results \
   -pa data/specific_set.smi \
-  -ial 10 \
+  -ial 5 \
   -qed 0.6 \
   -sa 5 \
   -ta 0.6
@@ -194,7 +193,7 @@ python run_generation.py \
 Add the `-r` (`-pt` and `-pa` are no longer necessary).
 
 ```bash
-python run_generation.py \
+python generator.py \
   -g data/general_set.smi \
   -e 100 \
   -v 0.1 \
