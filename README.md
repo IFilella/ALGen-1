@@ -54,19 +54,28 @@ To install ALGen, follow these steps:
     git clone https://github.com/IFilella/ALGen-1
     cd ALGen-1
     ```
-2. **Create and activate the virtual environment**:
+2. **Create virtual environment and Install ALGen**:
     ```bash
-    conda create -n ALGen
-    conda activate ALGen
-    ```
-3. **Install ALGen** using the [setup.py](setup.py):
-    ```bash
-    pip install .
+    make install
     ```
 
->**Hardware Requirements**: ALGen is designed to run efficiently on a single GPU. A CUDA-compatible GPU with sufficient RAM is recommended for optimal performance
 
-> **Note**: Make sure you are using Python 3.10 or higher and have pip installed.
+    >**Hardware Requirements**: ALGen is designed to run efficiently on a single GPU. A CUDA-compatible GPU with sufficient RAM is recommended for optimal performance
+
+    > **Note**: Make sure you are using Python 3.10 or higher and have pip installed.
+
+Others:
+
+3. **Test ALGen**:
+    ```bash
+    make test
+    ```
+
+4. **Uninstall ALGen and clean**:
+    ```bash
+    make uninstall
+    make clean
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
