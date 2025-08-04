@@ -54,7 +54,14 @@ To install ALGen, follow these steps:
     git clone https://github.com/IFilella/ALGen-1
     cd ALGen-1
     ```
-2. **Create virtual environment and Install ALGen**:
+
+2. **Create virtual environment**:
+    ```bash
+    conda create -n ALGen
+    conda activate ALGen
+    ```
+
+3. **Install ALGen**:
     ```bash
     make install
     ```
@@ -66,12 +73,12 @@ To install ALGen, follow these steps:
 
 Others:
 
-3. **Test ALGen**:
+4. **Test ALGen**:
     ```bash
     make test
     ```
 
-4. **Uninstall ALGen and clean**:
+5. **Uninstall ALGen and clean**:
     ```bash
     make uninstall
     make clean

@@ -2,7 +2,11 @@
 
 install:
 	@echo "🔧 Creating virtual environment and installing the package..."
+<<<<<<< HEAD
 	pip install --upgrade pip setuptools wheel && pip install .
+=======
+	pip install --upgrade pip && pip install -e .
+>>>>>>> 68a9c762ca3c35b729043e9c5dafe47f810b3719
 
 test:
 	@echo "🧪 Running tests..."
