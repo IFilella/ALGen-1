@@ -57,7 +57,7 @@ To install ALGen, follow these steps:
 
 2. **Create virtual environment**:
     ```bash
-    conda create -n ALGen
+    conda create -n ALGen python=3.10
     conda activate ALGen
     ```
 
@@ -69,7 +69,19 @@ To install ALGen, follow these steps:
 
     >**Hardware Requirements**: ALGen is designed to run efficiently on a single GPU. A CUDA-compatible GPU with sufficient RAM is recommended for optimal performance
 
-    > **Note**: Make sure you are using Python 3.10 or higher and have pip installed.
+    Install compatible TensorFlow and CUDA Toolkit. Check your device compatibility [here](https://www.tensorflow.org/install/source#gpu).
+    ```
+    conda install -c conda-forge tensorflow=x.x            # replace x for your version
+    conda install -c conda-forge cudatoolkit=x.x cudnn=x.x
+    conda install -c nvidia cuda-nvcc
+    ```
+
+    You can check your installation running this commands on python:
+    ```python
+    import tensorflow as tf
+    print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
+    ```
+
 
 Others:
 
