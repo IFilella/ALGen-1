@@ -69,7 +69,16 @@ To install ALGen, follow these steps:
 
     >**Hardware Requirements**: ALGen is designed to run efficiently on a single GPU. A CUDA-compatible GPU with sufficient RAM is recommended for optimal performance
 
-    Install compatible TensorFlow and CUDA Toolkit. Check your device compatibility [here](https://www.tensorflow.org/install/source#gpu).
+    Install compatible TensorFlow and CUDA Toolkit.
+
+    First check your CUDA version:
+    
+    ````
+    nvcc --version
+    ````
+    
+    Then, check your CUDA compatibility [here](https://www.tensorflow.org/install/source#gpu) and install correspondingly:
+   
     ```
     conda install -c conda-forge tensorflow=x.x            # replace x for your version
     conda install -c conda-forge cudatoolkit=x.x cudnn=x.x
