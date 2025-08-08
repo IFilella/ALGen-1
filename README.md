@@ -1,5 +1,6 @@
 <a id="readme-top"></a>
 
+[![DOI](https://img.shields.io/badge/DOI-10.1038/s42004--025--01635--7-blue.svg)](https://www.nature.com/articles/s42004-025-01635-7)
 [![arXiv](https://img.shields.io/badge/arXiv-2305.06334-b31b1b.svg)](https://arxiv.org/abs/2305.06334)
 [![License](https://img.shields.io/badge/License-CC--BY--NC--SA%204.0-blue.svg)](./LICENSE)
 [![Python](https://img.shields.io/badge/Python-≥3.7-blue?logo=python)](https://www.python.org/)
@@ -250,9 +251,13 @@ This project is licensed under the Creative Commons Attribution-NonCommercial-Sh
 ## Citation
 If you use this work in your research, please cite the following paper:
 
+> Filella-Merce, I., Molina, A., Díaz, L. *et al.* *Optimizing drug design by merging generative AI with a physics-based active learning framework.* Commun Chem 8, 238 (2025). https://doi.org/10.1038/s42004-025-01635-7
+
+
+A preprint of this work is also available on arXiv:
 > Filella-Merce, I., *et al.* (2023). *Optimizing Drug Design by Merging Generative AI With Active Learning Frameworks.* arXiv:2305.06334. [https://arxiv.org/abs/2305.06334](https://arxiv.org/abs/2305.06334)
 
-A peer-reviewed version of this work is forthcoming in *Nature Communications in Chemistry*. Please check back for the updated citation once it is available.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
