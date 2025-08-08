@@ -81,7 +81,7 @@ To install ALGen, follow these steps:
    
     ```
     conda install -c conda-forge tensorflow=x.x            # replace x for your version
-    conda install -c conda-forge cudatoolkit=x.x cudnn=x.x
+    conda install -c conda-forge cudatoolkit cudnn=x.x
     conda install -c nvidia cuda-nvcc
     ```
 
