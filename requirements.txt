@@ -2,4 +2,3 @@ scikit-learn
 matplotlib
 pandas
 tqdm
-pytest

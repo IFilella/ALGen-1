@@ -6,6 +6,7 @@ install:
 
 test:
 	@echo "🧪 Running tests..."
+	conda install pytest
 	pytest
 
 clean:
